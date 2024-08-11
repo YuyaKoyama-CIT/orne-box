@@ -1,5 +1,3 @@
-
-* [Purpose](https://github.com/open-rdc/orne_box/wiki/Initial-Purpose)
 * This project is derived from [orne_navigation](https://github.com/open-rdc/orne_navigation).
 
 ## Software
@@ -22,9 +20,7 @@ source ~/.bashrc
 
 # Personally added
 
-
-`cd ~/icart_mini/icart_mini_driver/launch`
-vi icart_mini_drive.launch
+Please change part of file`icart_mini_drive.launch`in location `src/icart_mini/icart_mini_driver/launch`
 
 ### Excecution
 

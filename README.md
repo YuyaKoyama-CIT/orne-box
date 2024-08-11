@@ -22,6 +22,14 @@ catkin build
 source ~/.bashrc
 ```
 
+## Personally added
+
+
+```
+cd ~/icart_mini/icart_mini_driver/launch
+vi icart_mini_drive.launch
+```
+
 ### Excecution
 
 On simulator (gazebo)  

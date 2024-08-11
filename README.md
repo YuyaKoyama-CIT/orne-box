@@ -1,5 +1,3 @@
-# orne-box
-Platform hardware and software for autonomous robot
 
 * [Purpose](https://github.com/open-rdc/orne_box/wiki/Initial-Purpose)
 * This project is derived from [orne_navigation](https://github.com/open-rdc/orne_navigation).
@@ -22,13 +20,11 @@ catkin build
 source ~/.bashrc
 ```
 
-## Personally added
+# Personally added
 
 
-```
-cd ~/icart_mini/icart_mini_driver/launch
+`cd ~/icart_mini/icart_mini_driver/launch`
 vi icart_mini_drive.launch
-```
 
 ### Excecution
 

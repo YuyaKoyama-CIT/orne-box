@@ -20,7 +20,16 @@ source ~/.bashrc
 
 # Personally added
 
-Please change part of file`icart_mini_drive.launch`in location `src/icart_mini/icart_mini_driver/launch`
+Please change part of file `icart_mini_drive.launch` in location `src/icart_mini/icart_mini_driver/launch`
+
+```
+<arg name="scan_dev" default="/dev/sensors/hokuyo_urg" unless="$(arg use_eth_urg)"/>
+```
+>>>
+```
+<arg name="scan_dev" default="/dev/sensors/hokuyo_H0803606" unless="$(arg use_eth_urg)"/>
+
+```
 
 ### Excecution
 

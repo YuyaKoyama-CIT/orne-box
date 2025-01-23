@@ -28,7 +28,7 @@
     <param name="particles" value="30"/>
     <param name="iterations" value="5"/>
 
-    <param name="delta" value="0.05"/>　
+    <param name="delta" value="0.05"/>
     <param name="occ_thresh" value="0.25"/>
 
     <param name="linearUpdate" value="0.3"/>

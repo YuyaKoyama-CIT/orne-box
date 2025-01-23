@@ -202,7 +202,7 @@
 
   <xacro:include filename="$(find icart_mini_description)/urdf/sensors/hokuyo.urdf.xacro"/>
   <xacro:sensor_hokuyo name="hokuyo" parent="base_link">
-    <origin xyz="0.374295 0 0.2185" rpy="${-PI} 0 0"/>
+    <origin xyz="0.374295 0 0.2185" rpy="0 0 0"/>
   </xacro:sensor_hokuyo>
 
   <transmission name="tran1">

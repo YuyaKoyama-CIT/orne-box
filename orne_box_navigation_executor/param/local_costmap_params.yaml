@@ -1,13 +1,12 @@
 local_costmap:
-  global_frame: odom
-  robot_base_frame: base_link
-  update_frequency: 5.0
-  publish_frequency: 2.0
-  static_map: false
-  rolling_window: true
-  resolution: 0.05
-  width: 8.0
-  height: 8.0
-  transform_tolerance: 0.5
-  inflation_radius: 0.20
-
+  global_frame: odom            # コストマップが使用する座標フレーム（ここではオドメトリ座標系）。
+  robot_base_frame: base_link   # ロボットの基準となる座標フレーム。
+  update_frequency: 5.0         # コストマップの更新頻度（Hz単位、1秒間に5回更新）。
+  publish_frequency: 2.0        # 可視化用にコストマップを配信する頻度（Hz単位、1秒間に2回配信）。
+  static_map: false             # 静的地図を使用するかどうか（falseの場合、センサーデータから生成）。
+  rolling_window: true          # ロボットを中心にコストマップを動的に更新する設定。
+  resolution: 0.05              # コストマップの解像度（1セルのサイズ、メートル単位、ここでは5cm四方）。
+  width: 8.0                    # コストマップの横幅（メートル単位、ここでは8m）。
+  height: 8.0                   # コストマップの縦幅（メートル単位、ここでは8m）。
+  transform_tolerance: 0.5      # TF座標変換の許容時間（秒単位、0.5秒以内）。
+  inflation_radius: 0.20        # 障害物周囲の膨張（安全マージン）の半径（メートル単位、ここでは20cm）。

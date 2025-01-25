@@ -1,31 +1,31 @@
-max_obstacle_height: 0.60 # assume something like an arm is mounted on top of the robot
-obstacle_range: 8.0
-raytrace_range: 9.0
-inflation_radius: 0.50
-update_frequency: 3.0
+max_obstacle_height: 0.60   # 障害物の最大高さ（メートル単位）。ロボットにアームなどが取り付けられている場合を考慮して、ナビゲーション時に障害物として扱う高さの制限を設定します。
+obstacle_range: 8.0         # 障害物が検出される最大距離（メートル単位）。この範囲外の障害物は無視されます。
+raytrace_range: 9.0         # レイトレース（センサーの読み取り計算）の最大距離。衝突判定に使われます。
+inflation_radius: 0.50      # 障害物の周囲を膨張させる半径（メートル単位）。障害物周辺の安全マージンを増やして衝突を避けるために使用します。
+update_frequency: 3.0       # コストマップが更新される頻度（Hz）。高い値に設定することで、より頻繁にコストマップが更新され、ナビゲーションが反応しやすくなります。
 
-#width: 5.0
-#height: 5.0
-resolution: 0.15
+#width: 5.0                             # コストマップの幅（メートル単位）。現在はコメントアウトされています。
+#height: 5.0                            # コストマップの高さ（メートル単位）。現在はコメントアウトされています。
+resolution: 0.15                        # コストマップの解像度（メートル/ピクセル単位）。解像度が小さいほど、コストマップがより細かくなります。
 
-observation_sources: scan point_cloud
+observation_sources: scan point_cloud   # コストマップを構築するために使用されるデータのソース。ここでは、LaserScanとPointCloudの両方が使用されています。
 
 scan:
   {
-    data_type: LaserScan,
-    topic: /scan,
-    marking: true,
-    clearing: true,
-    inf_is_valid: true,
-    min_obstacle_height: 0.15,
-    max_obstacle_height: 1.0,
+    data_type: LaserScan,         # 障害物検出に使用されるセンサーデータのタイプ。ここではレーザースキャンが使用されています。
+    topic: /scan,                 # LaserScanデータが公開されるROSのトピック。
+    marking: true,                # スキャンで検出された障害物をコストマップにマークするかどうか。
+    clearing: true,               # スキャンで検出された自由空間をコストマップからクリアするかどうか。
+    inf_is_valid: true,           # レーザーセンサーの無限範囲読み取りを有効なデータとして扱うかどうか。
+    min_obstacle_height: 0.15,    # 障害物として考慮する最小の高さ。
+    max_obstacle_height: 1.0,     # 障害物として考慮する最大の高さ。これ以上の高さの障害物は無視されます。
   }
 
 point_cloud:
   {
-    data_type: PointCloud,
-    topic: /filtered_cloud,
-    marking: true,
-    clearing: true,
-    inf_is_valid: true,
+    data_type: PointCloud,      # 使用するセンサーデータのタイプ。ここではポイントクラウドが使用されています。
+    topic: /filtered_cloud,     # フィルタリングされたポイントクラウドデータが公開されるROSのトピック。
+    marking: true,              # ポイントクラウドで検出された障害物をコストマップにマークするかどうか。
+    clearing: true,             # ポイントクラウドで検出された自由空間をコストマップからクリアするかどうか。
+    inf_is_valid: true,         # ポイントクラウドの無限範囲読み取りを有効なデータとして扱うかどうか。
   }

@@ -3,10 +3,7 @@ Panels:
     Help Height: 138
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /LaserScan1
-        - /Map2
-        - /PointStamped1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 342
   - Class: rviz/Selection
@@ -19,7 +16,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
   - Class: orne_box_rviz_plugins/StateTriggerPanel
     Name: StateTriggerPanel
   - Class: waypoint_visualization/WaypointOperatorPanel
@@ -143,7 +140,7 @@ Visualization Manager:
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: PoseArray
-      Queue Size: 10
+      Queue Size: 20
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
@@ -153,14 +150,14 @@ Visualization Manager:
     - Alpha: 1
       Buffer Length: 1
       Class: rviz/Path
-      Color: 25; 255; 0
+      Color: 255; 0; 0
       Enabled: true
       Head Diameter: 0.30000001192092896
       Head Length: 0.20000000298023224
       Length: 0.30000001192092896
       Line Style: Lines
       Line Width: 0.029999999329447746
-      Name: Path
+      Name: /move_base/NavfnROS/plan
       Offset:
         X: 0
         Y: 0
@@ -399,7 +396,7 @@ Visualization Manager:
       Length: 0.30000001192092896
       Line Style: Lines
       Line Width: 0.029999999329447746
-      Name: Path
+      Name: /waypoint_manager/route/path
       Offset:
         X: 0
         Y: 0
@@ -450,7 +447,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 13.113565444946289
+      Distance: 64.02336120605469
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -458,17 +455,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -5.0632476806640625
-        Y: -4.5081586837768555
-        Z: 5.092434548714664e-06
+        X: 25.862451553344727
+        Y: -36.4254150390625
+        Z: -1.58013790496625e-07
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6553984880447388
+      Pitch: 1.22039794921875
       Target Frame: base_link
-      Yaw: 3.495396852493286
+      Yaw: 2.6354026794433594
     Saved: ~
 Window Geometry:
   Displays:

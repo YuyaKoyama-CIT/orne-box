@@ -3,7 +3,8 @@ Panels:
     Help Height: 138
     Name: Displays
     Property Tree Widget:
-      Expanded: ~
+      Expanded:
+        - /PoseArray1
       Splitter Ratio: 0.5
     Tree Height: 342
   - Class: rviz/Selection
@@ -16,7 +17,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
   - Class: orne_box_rviz_plugins/StateTriggerPanel
     Name: StateTriggerPanel
   - Class: waypoint_visualization/WaypointOperatorPanel
@@ -131,7 +132,7 @@ Visualization Manager:
       Use rainbow: true
       Value: true
     - Alpha: 1
-      Arrow Length: 0.30000001192092896
+      Arrow Length: 1
       Axes Length: 0.30000001192092896
       Axes Radius: 0.009999999776482582
       Class: rviz/PoseArray
@@ -140,7 +141,7 @@ Visualization Manager:
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: PoseArray
-      Queue Size: 20
+      Queue Size: 30
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
@@ -447,7 +448,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 64.02336120605469
+      Distance: 5.877603530883789
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -455,17 +456,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 25.862451553344727
-        Y: -36.4254150390625
-        Z: -1.58013790496625e-07
+        X: -0.5811283588409424
+        Y: -0.6679577827453613
+        Z: 4.737020572065376e-05
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.22039794921875
+      Pitch: 0.5253979563713074
       Target Frame: base_link
-      Yaw: 2.6354026794433594
+      Yaw: 3.250404119491577
     Saved: ~
 Window Geometry:
   Displays:

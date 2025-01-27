@@ -17,7 +17,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
   - Class: orne_box_rviz_plugins/StateTriggerPanel
     Name: StateTriggerPanel
   - Class: waypoint_visualization/WaypointOperatorPanel
@@ -448,7 +448,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 5.877603530883789
+      Distance: 44.64521408081055
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -456,17 +456,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: -0.5811283588409424
-        Y: -0.6679577827453613
+        X: -44.660865783691406
+        Y: -26.213577270507812
         Z: 4.737020572065376e-05
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5253979563713074
+      Pitch: 0.8203978538513184
       Target Frame: base_link
-      Yaw: 3.250404119491577
+      Yaw: 1.9503977298736572
     Saved: ~
 Window Geometry:
   Displays:

@@ -5,13 +5,13 @@ odom_frame_id:                odom        #オドメトリ座標系の名前を�
 footprint_frame_id:           base_link   #ロボットのフットプリント座標系（ロボットの占有範囲を表す座標系）の名前。
 base_frame_id:                base_link   #ロボット本体の基準となる座標系の名前。
 
-initial_pose_x:               0.0         #ロボットの初期位置（x座標、y座標）と初期角度（a: angle、ラジアン）を指定。
-initial_pose_y:               0.0
+initial_pose_x:               -68         #ロボットの初期位置（x座標、y座標）と初期角度（a: angle、ラジアン）を指定。
+initial_pose_y:               -80
 initial_pose_a:               0.0
 
-odom_fw_dev_per_fw:           0.19        #オドメトリの直進距離に基づく直進方向のノイズ量。
+odom_fw_dev_per_fw:           0.10        #オドメトリの直進距離に基づく直進方向のノイズ量。 0.19
 odom_fw_dev_per_rot:          0.0001      #オドメトリの回転量に基づく直進方向のノイズ量。
-odom_rot_dev_per_fw:          0.13        #オドメトリの直進距離に基づく回転方向のノイズ量。
+odom_rot_dev_per_fw:          0.03        #オドメトリの直進距離に基づく回転方向のノイズ量。 0.13
 odom_rot_dev_per_rot:         0.2         #オドメトリの回転量に基づく回転方向のノイズ量。
 
 laser_likelihood_max_dist:    0.2         #レーザーセンサの距離計測に基づく尤度を計算するときに考慮する最大距離。これ以上遠い測定値は無視されます。
@@ -21,7 +21,10 @@ open_space_threshold:         0.05        #開放空間と障害物の閾値。�
 
 expansion_radius_position:    0.1         #パーティクルを再サンプリングするときの位置の展開半径（メートル単位）。
 expansion_radius_orientation: 0.2         #パーティクルを再サンプリングするときの方向の展開半径（ラジアン単位）。
+extraction_rate:              0.1
 
+range_threshold:              0.1
+sensor_reset:                 true
 laser_min_range:              0.0         #レーザーセンサの最小有効距離。
 laser_max_range:              100000000.0 #レーザーセンサの最大有効距離。
 
